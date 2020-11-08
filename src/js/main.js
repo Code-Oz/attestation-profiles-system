@@ -8,8 +8,10 @@ import { prepareForm } from './form-util'
 import { warnFacebookBrowserUserIfNecessary } from './facebook-util'
 import { addVersion } from './util'
 import { createForm } from './form'
+import { prepareProfiles } from './profiles'
 
 warnFacebookBrowserUserIfNecessary()
 createForm()
 prepareForm()
+prepareProfiles()
 addVersion(process.env.VERSION)
