@@ -1,12 +1,8 @@
-# Générateur de certificat de déplacement
+# Generator of travel certificate
 
-Ce projet proviens de https://github.com/LAB-MI/attestation-deplacement-derogatoire-q4-2020
+99 % of this project is coming from https://github.com/LAB-MI/attestation-deplacement-derogatoire-q4-2020 not me (I just add the profil feature)
 
-J'ai seulement ajouter l'ajout de profiles afin de pouvoir pre-remplir certains champs en fonction du profil selectionne
-
-## Développer
-
-### Installer le projet
+### Install the project
 
 ```console
 git clone
@@ -14,11 +10,11 @@ cd attestation-deplacement-derogatoire-q4-2020
 npm i
 ```
 
-### Creation des profiles
+### Creation of profiles
 
-Ensuite il faut cree un dossier qui contiendras vos profiles, si vous ne le cree pas, le projet ne marchera pas. Vous etes obliger d'effectuer cette operation car le fichier contenant vos profils ne sont pas commit par git par securite.
+We need to create folder that will contains your profiles, if you skip this step the project will not work correctly. I add profiles.json in gitignore in order to prevent sharing your private data.
 
-Pour cela, il faut cree un fichier `\src\profiles\profiles.json`
+In order to achieve this, you need to create `\src\profiles\profiles.json`
 
 ```console
 mkdir .\src\profiles && touch .\src\profiles\profiles.json
@@ -26,7 +22,7 @@ mkdir .\src\profiles && touch .\src\profiles\profiles.json
 echo [{"profilname": "fake","firstname": "fake","lastname": "fake","birthday": "01/01/1900","placeofbirth": "fake","address": "fake","city": "fake","zipcode": "00000"}] > .\src\profiles\profiles.json
 ```
 
-### Lancer le projet
+### Run the project
 
 ```console
 npm start
